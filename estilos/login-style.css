@@ -51,7 +51,7 @@ body {
 
 .usuario,
 .contrasena,
-button {
+.btnLogin {
     display: flex;
     margin: 50px auto;
 }
@@ -110,6 +110,7 @@ button {
     padding: 10px 15px;
     border-radius: 5px;
     background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .btnLogin:hover {
@@ -126,4 +127,5 @@ a {
     color: rgb(128, 0, 0);
     font-size: 1.2rem;
     margin: 10px auto;
+    text-decoration: none;
 }
