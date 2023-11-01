@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    font-size: 1.5rem;
+    background-image: url(img/background.png);
+    background-size: cover;
+}
+
+
+.contenedor {
+    margin: 5% 20%;
+    background-color: #ffffff;
+    border-radius: 2%;
+    backdrop-filter: blur(10px);
+    position: relative;
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.tituloDiv{
+    margin-bottom: 5%;
+}
+
+.login {
+    display: flex;
+}
+
+.imgLogo {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.574));
+}
+
+.datosLogin {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuario,
+.contrasena,
+button {
+    display: flex;
+    margin: 50px auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+    color: rgb(70, 70, 70);
+    margin: 30% auto;
+}
+
+.container .label {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    position: absolute;
+    top: 13px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input {
+    width: 200px;
+    height: 45px;
+    outline: none;
+    padding: 0px 7px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow:
+        -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.input:focus {
+    color: #fff;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.container .input:valid~.label,
+.container .input:focus~.label {
+    transition: 0.3s;
+    padding-left: 2px;
+    transform: translateY(-35px);
+}
+
+.container .input:valid,
+.container .input:focus {
+    box-shadow: 1px 1px 10px rgb(142, 142, 142),
+        -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.btnLogin{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.btnLogin:hover{
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnLogin:active{
+    transform: scale(0.95);
+}
