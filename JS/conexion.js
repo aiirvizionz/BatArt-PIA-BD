@@ -1,18 +1,40 @@
-const mysql = require("mysql");
+const mysql = require('mysql2');
 
-// Configura los parámetros de conexión a tu base de datos MySQL
-const con = mysql.createConnection({
+const con = {
     host: 'localhost',
-    database: 'bd_pia',
     user: 'root',
-    password: ''
+    password: 'SAO12345',
+    database: 'bd_pia',
+    port: '3306'
+};
+
+const connection = mysql.createConnection(con);
+
+connection.connect((err) => {
+    if (err) {
+        console.error('Error de conexión a la base de datos:', err);
+        return;
+    }
+    console.log('Conexión exitosa a la base de datos');
 });
 
-con.connect(function (err) {
+// Consultas a la base de datos //
+
+connection.query('SELECT * FROM clientes', (err, rows, fields) => {
     if (err) {
-        console.log("Error al conectarse a la base de datos");
+        console.error('Error en la consulta:', err);
         return;
-    } else {
-        console.log("Conexión exitosa a la base de datos");
     }
+    console.log('Consulta exitosa');
+    console.log(rows);
+});
+
+
+
+
+connection.end((err) => {
+    if (err) {
+        console.error('Error al cerrar la conexión:', err);
+    }
+    console.log('Conexión cerrada');
 });

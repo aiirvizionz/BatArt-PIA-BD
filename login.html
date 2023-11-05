@@ -17,24 +17,25 @@
 
         <div class="tituloDiv">
             <h2>Bienvenido/a</h2>
-            <img src="img/logo.png" alt="Logo del restaurante">
+            <img src="img/logo2.png" alt="Logo del restaurante">
         </div>
 
         <div class="datosLogin">
 
             <form action="">
                 <div class="container">
-                    <input type="text" name="user" id="user" required class="input">
-                    <label for="user" class="label">Usuario</label>
+                    <input type="text" name="user" id="user" required class="input" placeholder="Usuario(24)" maxlength="24">
+                    <label for="user" class="label"></label>
                 </div>
 
                 <div class="container">
-                    <input type="password" name="password" id="password" required class="input">
-                    <label for="password" class="label">Contraseña</label>
+                    <input type="password" name="password" id="password" required class="input" placeholder="********" minlength="8">
+                    <label for="password" class="label"></label>
                 </div>
 
                 <!--<button type="button" class="btnLogin">Iniciar sesión</button> -->
-                <a href="/html/menu.html" class="btnLogin">Iniciar sesion</a>
+                <a href="/html/menuEmpleado.html" class="btnLogin">Iniciar sesión</a>
+                <a href="/html/menuAdmin.html" class="btnLogin">Administrador</a>
             </form>
 
         </div>

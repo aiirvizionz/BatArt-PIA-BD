@@ -24,10 +24,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 #menu {
-    background-color: aliceblue;
+    background-color: rgb(237, 237, 237);
     width: 100%;
     height: 16vh;
     position: sticky;
@@ -36,8 +37,9 @@ body {
 }
 
 img {
+    object-fit: cover;
     padding: 0 3em;
-    width: 100px;
+    width: 150px;
     height: 100px;
 }
 
@@ -48,9 +50,20 @@ ul {
     justify-content: space-around;
     width: 90%;
     text-align: center;
+    font-weight: 500;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: #baa31f;
+    text-transform: uppercase;
+    margin: 0 -20px;
 }
 
 .btnNav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
     color: #000000;
     text-transform: uppercase;
     text-decoration: none;
@@ -94,7 +107,7 @@ section {
     margin: auto 10%;
     height: 80vh;
     border: 1px solid black;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,16 +115,21 @@ section {
 
 
 .tituloDiv {
-    width: 30%;
-    height: 10%;
+    width: 20%;
+    height: 11%;
     margin: auto;
     text-align: center;
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
 }
 
-h2{
+h2 {
     font-size: 2rem;
     font-weight: 900;
-    color: rgb(0, 196, 92);
+    color: rgb(233, 149, 30);
 }
 
 .camposDiv {
@@ -123,12 +141,13 @@ h2{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items:start;
+    align-items: start;
     padding: 20px 100px;
     margin: auto;
+    background-color: #fff;
 }
 
-.camposDiv div{
+.camposDiv div {
     display: flex;
     flex-direction: column;
     margin: 5px 0;
@@ -144,7 +163,7 @@ select {
     margin: 10px 0;
 }
 
-select{
+select {
     cursor: pointer;
 }
 
@@ -165,3 +184,4 @@ button:hover {
     transition: 0.2s;
     cursor: pointer;
 }
+
