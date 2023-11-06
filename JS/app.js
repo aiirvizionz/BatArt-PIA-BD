@@ -1,44 +1,18 @@
-const btnLogin = document.querySelector('.btnLogin');
+const registro = document.getElementById('registro');
+const login = document.getElementById('login');
+const btnRegistro = document.getElementById('btnRegistro');
 
-btnLogin.addEventListener('click', () => {
-    //Mandar a otra pagina
-    window.location.href = '/html/menu.html';
+btnRegistro.addEventListener('click', () => {
+  registro.style.display = 'block';
+  login.style.display = 'none';
 });
 
-const btnClientes = document.getElementById('btnClientes');
-const btnEmpleados = document.getElementById('btnEmpleados');
-const btnVentas = document.getElementById('btnVentas');
-const btnProductos = document.getElementById('btnProductos');
+const aceptarRegistro = document.getElementById('aceptarRegistro');
 
-const clientesInfo = document.getElementById('clientes');
-const empleadosInfo = document.getElementById('empleados');
-const ventasInfo = document.getElementById('ventas');
-const productosInfo = document.getElementById('productos');
+aceptarRegistro.addEventListener('click', () => {
+  //Logica para la consulta de guardar informcion en la base de datos
 
-btnClientes.addEventListener('click', () => {
-    clientesInfo.style.visibility = 'visibility';
-    empleadosInfo.style.visibility = 'hidden';
-    ventasInfo.style.visibility = 'hidden';
-    productosInfo.style.visibility = 'hidden';
-  });
-  
-  btnEmpleados.addEventListener('click', () => {
-    clientesInfo.style.visibility = 'hidden';
-    empleadosInfo.style.visibility = 'visibility';
-    ventasInfo.style.visibility = 'hidden';
-    productosInfo.style.visibility = 'hidden';
-  });
-  
-  btnVentas.addEventListener('click', () => {
-    clientesInfo.style.visibility = 'hidden';
-    empleadosInfo.style.visibility = 'hidden';
-    ventasInfo.style.visibility = 'visibility';
-    productosInfo.style.visibility = 'hidden';
-  });
-  
-  btnProductos.addEventListener('click', () => {
-    clientesInfo.style.visibility = 'hidden';
-    empleadosInfo.style.visibility = 'hidden';
-    ventasInfo.style.visibility = 'hidden';
-    productosInfo.style.visibility = 'visibility';
-  });
+
+  registro.style.visibility = 'hidden';
+  login.style.visibility = 'visible';
+});

@@ -12,8 +12,55 @@
 
 <body>
 
-    <section class="contenedor">
+    <section class="contenedor" id="registro">
 
+        <div class="tituloDiv">
+            <h2>Ingrese sus datos</h2>
+            <img src="img/logo2.png" alt="Logo del restaurante">
+        </div>
+
+        <div class="datosRegistro">
+
+            <form action="">
+                <div class="container">
+                    <input type="text" name="user" id="user" required class="input" placeholder="Nombre(s)"
+                        maxlength="24">
+                </div>
+
+                <div class="container">
+                    <input type="password" name="password" id="password" required class="input" placeholder="Apellido materno"
+                        minlength="8">
+                </div>
+
+                <div class="container">
+                    <input type="text" name="user" id="user" required class="input" placeholder="Apellido paterno"
+                        maxlength="24">
+                </div>
+
+                <div class="container">
+                    <input type="text" name="user" id="user" required class="input" placeholder="Teléfono móvil"
+                        maxlength="24">
+                </div>
+                
+                <div class="container">
+                    <input type="text" name="user" id="user" required class="input" placeholder="Correo"
+                        maxlength="35">
+                </div>
+
+                <div class="container">
+                    <input type="text" name="user" id="user" required class="input" placeholder="*********"
+                        maxlength="24">
+                </div>
+
+                <button class="btnLogin">Aceptar</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <section class="contenedor" id="login">
 
         <div class="tituloDiv">
             <h2>Bienvenido/a</h2>
@@ -24,23 +71,25 @@
 
             <form action="">
                 <div class="container">
-                    <input type="text" name="user" id="user" required class="input" placeholder="Usuario(24)" maxlength="24">
+                    <input type="text" name="user" id="user" required class="input" placeholder="Usuario(24)"
+                        maxlength="24">
                     <label for="user" class="label"></label>
                 </div>
 
                 <div class="container">
-                    <input type="password" name="password" id="password" required class="input" placeholder="********" minlength="8">
+                    <input type="password" name="password" id="password" required class="input" placeholder="********"
+                        minlength="8">
                     <label for="password" class="label"></label>
                 </div>
 
-                <!--<button type="button" class="btnLogin">Iniciar sesión</button> -->
                 <a href="/html/menuEmpleado.html" class="btnLogin">Iniciar sesión</a>
                 <a href="/html/menuAdmin.html" class="btnLogin">Administrador</a>
+
             </form>
 
         </div>
 
-        <a href="">Registrar nuevo empleado</a>
+        <button class="btnLogin" id="btnRegistro">Registrar empleado</button>
 
     </section>
 
