@@ -9,10 +9,12 @@ btnRegistro.addEventListener('click', () => {
 
 const aceptarRegistro = document.getElementById('aceptarRegistro');
 
-aceptarRegistro.addEventListener('click', () => {
+/*aceptarRegistro.addEventListener('click', () => {
   //Logica para la consulta de guardar informcion en la base de datos
 
 
   registro.style.visibility = 'hidden';
   login.style.visibility = 'visible';
-});
+});*/
+
+//Consultas a la base de datos
