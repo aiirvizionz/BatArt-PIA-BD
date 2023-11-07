@@ -63,6 +63,44 @@ connection.query('SELECT * FROM clientes', (err, rows, fields) => {
     console.log(rows);
 });
 
+/* EMPLEADOS */
+// Query SELECT para comparar los datos de inicio de sesión del login de empleado
+
+// Query INSERT para guardar los datos del registro en la tabla login_Emp y empleados
+
+// Query DELETE para eliminar los datos del registro en la tabla empleados en el menu de ADMIN
+
+// Query UPDATE para actualizar los datos del registro en la tabla empleados
+
+
+/* PRODUCTOS */
+// Query INSERT para guardar los datos del registro en la tabla productos
+
+// Query DELETE para eliminar los datos del registro en la tabla productos en el menu de ADMIN
+
+// Query UPDATE para actualizar los datos del registro en la tabla productos
+
+
+/* CLIENTES */
+// Query INSERT para guardar los datos del registro en la tabla clientes en el menu de EMPLEADO
+
+// Query DELETE para eliminar los datos del registro en la tabla clientes en el menu de EMPLEADO
+
+// Query UPDATE para actualizar los datos del registro en la tabla clientes en el menu de EMPLEADO
+
+
+/* VENTA */
+// Query INSERT para guardar los datos del registro en la tabla ventas en el menu de EMPLEADO
+
+// Query DELETE para eliminar los datos del registro en la tabla ventas en el menu de EMPLEADO
+
+// Query UPDATE para actualizar los datos del registro en la tabla ventas en el menu de EMPLEADO
+
+
+
+
+
+
 
 
 //Cerrar conexión
